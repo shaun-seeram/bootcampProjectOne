@@ -371,3 +371,7 @@ input[type=submit], .button {
   color: #0C1423;
   padding: 10px 20px;
 }
+
+h5 {
+  color: red;
+}
