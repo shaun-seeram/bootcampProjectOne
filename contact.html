@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet"> 
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="contact">
     
     <header>
-        <nav>
+        <nav class="wrapper">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -18,33 +21,35 @@
                 <li><a href="" class="current">Contact</a></li>
             </ul>
         </nav>
-        <h1>Get in Touch</h1>
+        <div class="wrapper">
+            <h1>Get in Touch</h1>
+        </div>
     </header>
 
     <main>
-        <section>
-            <div>
+        <section class="wrapper">
+            <div class="contactLeft">
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href=""><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
+                    <li><a href=""><span class="iconify" data-icon="ant-design:instagram-outlined" data-inline="false"></span></a></li>
+                    <li><a href=""><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
+                    <li><a href=""><span class="iconify" data-icon="bx:bxl-whatsapp" data-inline="false"></span></a></li>
                 </ul>
-                <p>info@email.com</p>
+                <p class="email">info@email.com</p>
                 <p>123 - 456 - 7890</p>
                 <p>123 Queen Street West, Unit 10</p>
                 <p>Toronto, ON</p>
                 <p>M5V 2D5</p>
             </div>
-            <div>
+            <div class="contactRight">
                 <form id="contact" action="" method="">
-                    <div>
+                    <div class="textBox">
                         <input type="text" aria-label="Name" placeholder="Name">
                         <input type="email" aria-label="Email" placeholder="Email Address">
                     </div>
                     <textarea aria-label="Message" placeholder="Message"></textarea>
                 </form>
-                <input type="submit" value="Submit" form="contact">
+                <input type="submit" value="Submit" form="contact" class="dblueButton button">
             </div>
         </section>
     </main>

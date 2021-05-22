@@ -266,7 +266,7 @@ body, h1, h2, h3, ul, li {
   list-style: none;
 }
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, a, input[type=submit] {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   color: #FFF;
@@ -285,6 +285,12 @@ span {
 h1 {
   font-size: 8rem;
   line-height: 92px;
+}
+
+.index h1 {
+  font-size: 13.8rem;
+  line-height: 126px;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,12 +301,6 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 70vh;
-}
-
-.index h1 {
-  font-size: 13.8rem;
-  line-height: 126px;
 }
 
 h2, h3, nav {
@@ -345,7 +345,8 @@ input[type=submit], .button {
 
 .index header {
   height: 80vh;
-  background-image: url("../images/header-image.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/header-image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header-image.jpg");
   background-size: cover;
   position: relative;
 }
@@ -400,6 +401,7 @@ input[type=submit], .button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  border: none;
 }
 
 .articleQuarters div {
@@ -459,7 +461,7 @@ input[type=submit], .button {
   width: calc(100% - 75px);
 }
 
-.iconify {
+.index .iconify {
   font-size: 6rem;
   padding: 10px;
   background-color: #86E0F9;
@@ -496,6 +498,138 @@ input[type=submit], .button {
   width: calc(100% - 220px - 30px);
 }
 
+.gallery div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
 .gallery div div {
   width: 32%;
+}
+
+footer {
+  background-color: #86E0F9;
+  text-align: center;
+  padding: 5px;
+  color: black;
+}
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+.contact header {
+  height: 50vh;
+  background-image: url("../images/contact-header.jpg");
+}
+.contact header div {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact main {
+  background-color: #0C1423;
+}
+.contact main p {
+  margin: 0;
+  padding: 0;
+}
+.contact main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact main section .contactLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 25%;
+  position: relative;
+  bottom: 100px;
+}
+.contact main section .contactLeft .email {
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-family: "Barlow", sans-serif;
+}
+.contact main section .contactLeft ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact main section .contactLeft ul li {
+  margin-right: 30px;
+}
+.contact main section .contactRight {
+  width: 70%;
+  background-color: #0F614E;
+  padding: 40px;
+  position: relative;
+  bottom: 130px;
+  left: 30px;
+  -webkit-box-shadow: -30px 30px 0 #86E0F9;
+          box-shadow: -30px 30px 0 #86E0F9;
+}
+.contact main section .contactRight .textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.contact main section .contactRight .dblueButton {
+  width: 100%;
+}
+.contact footer {
+  height: 40px;
+}
+
+input[type=text], input[type=email] {
+  width: 49%;
+  border: 0;
+  border-bottom: 1px solid #86E0F9;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 32px;
+  margin-bottom: 40px;
+  background-color: #0F614E;
+  color: white;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  border: 0;
+  border: 1px solid #86E0F9;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 32px;
+  background-color: #0F614E;
+  color: white;
+  margin-bottom: 40px;
+  padding: 20px;
 }

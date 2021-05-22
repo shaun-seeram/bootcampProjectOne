@@ -42,7 +42,7 @@ body, h1, h2, h3, ul, li {
     list-style: none;
 }
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, a, input[type="submit"] {
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
     color: #FFF;
@@ -61,15 +61,15 @@ span {
 h1 {
     font-size: 8rem;
     line-height: 92px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 70vh;
 }
 
 .index h1 {
     font-size: 13.8rem;
     line-height: 126px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h2, h3, nav {
@@ -111,7 +111,7 @@ input[type="submit"], .button {
 
 .index header {
     height: 80vh;
-    background-image: url("../images/header-image.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/header-image.jpg");
     background-size: cover;
     position: relative;
 }
@@ -157,6 +157,7 @@ input[type="submit"], .button {
     color: white;
     padding: 10px 20px;
     height: fit-content;
+    border: none;
 }
 
 .articleQuarters div {
@@ -202,7 +203,7 @@ input[type="submit"], .button {
     }
 }
 
-.iconify {
+.index .iconify {
     font-size: 6rem;
     padding: 10px;
     background-color: $blue;
@@ -236,8 +237,113 @@ input[type="submit"], .button {
 
 .gallery {
     div {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
         div {
             width: 32%;
         }
     }
+}
+
+footer {
+    background-color: $blue;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.contact {
+    header {
+    height: 50vh;
+    background-image: url("../images/contact-header.jpg");
+        div {
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    main {
+        background-color: $dBGrey;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            .contactLeft {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 25%;
+                position: relative;
+                bottom: 100px;
+                .email {
+                    text-transform: uppercase;
+                    padding: 20px 0;
+                    font-family: 'Barlow', sans-serif;
+                }
+                ul {
+                    display: flex;
+                    li {
+                        margin-right: 30px;
+                    }
+                }
+            }
+            .contactRight {
+                width: 70%;
+                background-color: $green;
+                padding: 40px;
+                position: relative;
+                bottom: 130px;
+                left: 30px;
+                box-shadow: -30px 30px 0 $blue;
+                .textBox {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+                .dblueButton {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 40px;
+    }
+}
+
+input[type="text"], input[type="email"] {
+    width: 49%;
+    border: 0;
+    border-bottom: 1px solid $blue;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    line-height: 32px;
+    margin-bottom: 40px;
+    background-color: $green;
+    color: white;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border: 1px solid $blue;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    line-height: 32px;
+    background-color: $green;
+    color: white;
+    margin-bottom: 40px;
+    padding: 20px;
 }
