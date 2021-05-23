@@ -258,6 +258,7 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 body, h1, h2, h3, ul, li {
@@ -632,4 +633,119 @@ textarea {
   color: white;
   margin-bottom: 40px;
   padding: 20px;
+}
+
+.blog {
+  background-color: #0C1423;
+}
+.blog header {
+  height: 60vh;
+  background-image: url("../images/blog-header.jpg");
+  background-size: cover;
+}
+.blog .blogFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog .blogFlex .leftColumn {
+  width: 32%;
+  height: 100%;
+  margin-top: 40px;
+  background-color: #0F614E;
+  padding: 10px;
+}
+.blog .blogFlex .leftColumn li {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+.blog .blogFlex .rightColumn {
+  width: 65%;
+  position: relative;
+}
+.blog .blogFlex .rightColumn .blogPostImg {
+  position: absolute;
+  top: -260px;
+  left: 40px;
+  right: -40px;
+}
+.blog .blogFlex .rightColumn .blogPostImg img {
+  -webkit-box-shadow: -40px 40px 0 #86E0F9;
+          box-shadow: -40px 40px 0 #86E0F9;
+}
+.blog .blogFlex .rightColumn .invisidiv {
+  height: 420px;
+}
+
+.blogPost {
+  border-left: 2px solid #86E0F9;
+  border-bottom: 2px solid #86E0F9;
+  margin-bottom: 20px;
+}
+
+.blogBlurb {
+  padding-left: 40px;
+}
+
+.avatar {
+  width: 10%;
+}
+.avatar img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  margin: 20px 0;
+}
+article p {
+  margin: 0;
+}
+
+.comment {
+  width: 87%;
+}
+
+.data {
+  line-height: initial;
+}
+
+.commentSection {
+  margin: 40px 0;
+  margin-left: 40px;
+}
+
+.blog input[type=text], .blog input[type=email], .blog textarea {
+  background-color: #0C1423;
+}
+.blog .button {
+  background-color: #0F614E;
+  border: 0;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.leftSideImg {
+  position: relative;
+  right: 20px;
+  bottom: 20px;
 }
