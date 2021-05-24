@@ -6,6 +6,29 @@
     justify-content: space-between;
 }
 
+nav {
+    a:hover, a:focus {
+        text-decoration: underline $reBlue 2px;
+    }
+}
+
+h3 {
+    position: relative;
+}
+
+.mid-nav {
+    h3:hover::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(134, 224, 249, 0.2);
+        display: inline-block;
+        position: absolute;
+        bottom: 0px;
+        left: -10px;
+    }
+}
+
 html {
     font-size: 62.5%; // 10px
 }
@@ -129,9 +152,18 @@ nav {
     color: $dbGrey;
 }
 
+.lb-button:hover, .lb-button:focus {
+    text-decoration: underline $dbGrey 2px;
+}
+
 .db-button {
     @include button($dbGrey, max-content);
     padding: 10px 20px;
+}
+
+.db-button:hover, .db-button:focus,
+.g-button:hover, .g-button:focus {
+    text-decoration: underline $white 2px;
 }
 
 .g-button {
