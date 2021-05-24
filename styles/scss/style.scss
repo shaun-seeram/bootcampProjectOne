@@ -19,13 +19,14 @@ h3 {
 .mid-nav {
     h3:hover::before {
         content: "";
-        height: 100%;
         width: 100%;
         background-color: rgba(134, 224, 249, 0.2);
         display: inline-block;
         position: absolute;
-        bottom: 0px;
+        top: -10px;
+        bottom: -10px;
         left: -10px;
+        border-radius: 10px;
     }
 }
 
@@ -291,25 +292,21 @@ footer {
 
 .profile {
     padding: 60px 0;
-    @include flex();
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 60px;
     .small-box {
-        width: 200px;
-        height: 200px;
+        height: min-content;
         box-shadow: 30px 30px 0 $reBlue;
-    }
-    .profile-blurb {
-        width: calc(100% - 220px - 30px);
-        padding-left: 20px;
     }
 }
 
 .gallery {
     padding: 60px 0;
-    .flex {
-        @include flex();
-        div {
-            width: 32%;
-        }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
     }
 }
 
@@ -570,16 +567,11 @@ form {
         }
 
         .profile {
-            flex-direction: column;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100% 1fr;
             .small-box {
-                width: 100%;
-                height: 100%;
                 box-shadow: unset;
-            }
-            .profile-blurb {
-                width: 100%;
-                padding-top: 20px;
-                padding-left: 0px;
+                margin-bottom: 20px;
             }
         }
         
