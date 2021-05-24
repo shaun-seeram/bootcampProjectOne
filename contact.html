@@ -7,55 +7,64 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet"> 
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <title>Document</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> 
+    <title>Contact</title>
 </head>
 <body class="contact">
     
     <header>
-        <nav class="wrapper">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="" class="current">Contact</a></li>
-            </ul>
-        </nav>
         <div class="wrapper">
-            <h1>Get in Touch</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html" class="current">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="wrapper">
-            <div class="contactLeft">
-                <ul>
-                    <li><a href=""><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
-                    <li><a href=""><span class="iconify" data-icon="ant-design:instagram-outlined" data-inline="false"></span></a></li>
-                    <li><a href=""><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
-                    <li><a href=""><span class="iconify" data-icon="bx:bxl-whatsapp" data-inline="false"></span></a></li>
-                </ul>
-                <p class="email">info@email.com</p>
-                <p>123 - 456 - 7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, ON</p>
-                <p>M5V 2D5</p>
-            </div>
-            <div class="contactRight">
-                <form id="contact" action="" method="">
-                    <div class="textBox">
-                        <input type="text" aria-label="Name" placeholder="Name">
-                        <input type="email" aria-label="Email" placeholder="Email Address">
+    <main class="wrapper flex">
+
+        <section class="social">
+            <ul class="social-icons">
+                <li><a href=""><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
+                <li><a href=""><span class="iconify" data-icon="ant-design:instagram-outlined" data-inline="false"></span></a></li>
+                <li><a href=""><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
+                <li><a href=""><span class="iconify" data-icon="bx:bxl-whatsapp" data-inline="false"></span></a></li>
+            </ul>
+            <ul class="address">
+                <li><p class="email">info@email.com</p></li>
+                <li><p>123 - 456 - 7890</p></li>
+                <li><p>123 Queen Street West, Unit 10</p></li>
+                <li><p>Toronto, ON</p></li>
+                <li><p>M5V 2D5</p></li>
+            </ul>
+        </section>
+
+        <section class="contact-right">
+            <h1>Get in touch</h1>
+            <div class="form green-bg">
+                <form id="contact" action="submit.php" method="POST">
+                    <div class="upper-form">
+                        <label for="name" class="sr-only">Name:</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="email" class="sr-only">Email:</label>
+                        <input type="email" id="email" placeholder="Email">
                     </div>
-                    <textarea aria-label="Message" placeholder="Message"></textarea>
+                    <label for="message" class="sr-only">Message:</label>
+                    <textarea id="message" placeholder="Message"></textarea>
                 </form>
-                <input type="submit" value="Submit" form="contact" class="dblueButton button">
+                <input type="submit" value="Submit" form="contact" class="db-button button">
             </div>
         </section>
+
     </main>
 
     <footer>
         <p>Copyright 2021 Juno</p>
     </footer>
+
 </body>
 </html>
