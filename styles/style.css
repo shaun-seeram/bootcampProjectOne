@@ -782,6 +782,10 @@ article p {
   margin: 40px 0 40px 40px;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: 940px) {
   .contact-right {
     width: 70%;
@@ -940,4 +944,31 @@ article p {
     width: 100%;
     position: static;
   }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: unset;
+    position: fixed;
+    padding-right: 100px;
+    z-index: 4;
+  }
+
+  .subMenu {
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    background-color: darkgray;
+    padding: 15px;
+    border-radius: 15px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+  }
+
+  /* .mobile:hover .subMenu {
+    display: flex;
+  } */
 }
